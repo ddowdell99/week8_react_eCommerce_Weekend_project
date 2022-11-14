@@ -1,12 +1,12 @@
 from flask import Flask
 from config import Config
 from flask_migrate import Migrate
-from .models import db, User
+from .models import db, Customer
 from flask_cors import CORS
 
 # import blueprint
-from .auth.routes import auth
-from .products.routes import products
+# from app.auth.routes import auth
+# from app.products.routes import products
 
 app = Flask(__name__)
 CORS(app)
@@ -16,8 +16,8 @@ CORS(app)
 app.config.from_object(Config)
 
 # registering your blueprint
-app.register_blueprint(auth)
-app.register_blueprint(products)
+# app.register_blueprint(auth)
+# app.register_blueprint(products)
 
 
 
