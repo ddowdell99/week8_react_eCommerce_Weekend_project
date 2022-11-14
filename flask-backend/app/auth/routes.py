@@ -45,7 +45,7 @@ def signUpCustomerAPI():
                 }
                
 @auth.route('/api/login', methods=["POST"])
-def logMeInAPI():
+def logInCustomerAPI():
 
     data = request.json
     username = data['username']
