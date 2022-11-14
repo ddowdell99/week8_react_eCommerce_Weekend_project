@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Nav from './components/nav';
 
-export default function App() {
+const App = () => {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     user: {},
+  //     messages: {}
+  //   }
+  // }
+
+  // logInUser = (user) => {
+  //   this.setState({
+  //     user: user
+  //   })
+  // };
+
+  // logOutUser = () => {
+  //   this.setState({
+  //     user: {}
+  //   })
+  // };
   return (
-    <div>App</div>
-  )
+    <div>
+      <div>Hello </div>
+    <Nav />
+    </div>
+  ) 
+  
 }
+export default App
