@@ -9,8 +9,9 @@ def signUpCustomerAPI():
 
             data = request.json
             username = data['username']
-            firstname = data['firstname']
-            lastname = data['lastname']
+            firstname = data['firstName']
+            lastname = data['lastName']
+
             email = data['email']
             password = data['password']
 
@@ -35,7 +36,7 @@ def signUpCustomerAPI():
             else:
 
                 # Adding user to database/ instantiate someone new
-                customer = Customer(username, firstname, lastname, email, password)
+                customer = Customer(firstname, lastname, username, email, password)
                 
                 # Adding instance to SQL
                 customer.saveToDB()
